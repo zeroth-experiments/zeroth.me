@@ -1,0 +1,5 @@
+<nav class="nav blog-nav">
+    {{#each navigation.main}}
+        <a class="nav-link {{#compare text '===' ../slug}}active{{/compare}}" href="{{link}}">{{uppercase text}}</a>
+    {{/each}}
+</nav>

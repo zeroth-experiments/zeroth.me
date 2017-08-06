@@ -1,0 +1,18 @@
+{{> html-head}}
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-sm-12 blog-main">
+				<ul>
+				{{#each posts}}
+					<li>
+						<a href="/{{url}}">	<h3>{{title}}</h3>	</a>
+					</li>
+				{{/each}}
+				</ul>
+			</div>
+			<!-- /.blog-main -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+{{> page-footer}} {{> html-footer}}

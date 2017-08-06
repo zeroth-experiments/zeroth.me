@@ -1,0 +1,51 @@
+{
+    "site": {
+        "title": "Zeroth",
+        "sub_title": "Abhishek Patil",
+        "description": "Abhishek Patil, Product Development Specialist, Engineer with over 10 years development experience in Europe, Middle East and South East Asia. Expertise in building products for the web, desktop and embedded platforms.",
+        "base_domain": "https://zeroth.me",
+        "keywords": "product, development, software, embedded system, mobile application, mobile app, web app, full stack, nodejs, python, c, c++, Qt, AVR, ARM, microprocessor, micro-controller, processor, web, desktop, embedded, multi platforms",
+        "author": {
+            "first_name": "Abhishek",
+            "last_name": "Patil",
+            "fb_profile":"http://facebook.com/abhishekworld",
+            "twitter_handle":"abhishekworld",
+            "tag_line": "Coding, Traveling, Photography"
+        }
+    },
+    "baseurl": "/",
+    "taxonomy": [
+        "catagory",
+        "tags"
+    ],
+    
+    "documents_dir": "./src/docs",
+    "build_dir": "./build",
+    "theme_dir": "./src/theme",
+    "site_assets":"./src/assets",
+    
+    "home_dir": "articles",
+    "default_layout": "page",
+    "process_obj_tree": true,
+    "paginate" : {
+        "limit": -1,
+        "articles": {
+            "sortBy":"date",
+            "create_index": false
+        }
+    },
+    "navigations_config" : {
+         "home": {
+            "link": "/",
+            "text": "articles"
+        },
+        "about":{
+            "link": "/about",
+            "text": "about"
+        },
+        "resume":{
+            "link": "/resume",
+            "text": "resume"
+        }
+    } 
+}

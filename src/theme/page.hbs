@@ -1,0 +1,19 @@
+{{> html-head}}
+
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-sm-12 blog-main">
+				<div class="blog-post">
+					<h1 class="blog-post-title">{{title}}</h1>
+					<p class="blog-post-meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{date published_at}}</p> 
+					{{{contents}}}
+				</div>
+				<!-- /.blog-post -->
+			</div>
+			<!-- /.blog-main -->
+		</div>
+		<!-- /.row -->
+	</div>
+	<!-- /.container -->
+	{{> comments}}
+{{> page-footer}} {{> html-footer}}

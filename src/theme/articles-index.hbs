@@ -1,0 +1,30 @@
+{{> html-head}}
+
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-sm-12 blog-main">
+				<ul class=" blog-list list-unstyled">
+				{{#each posts}}
+					<li>
+						<div class="row">
+							<div class="col-sm-9">
+								<a href="/{{url}}"><h4 class="blog-post-list-title">{{title}}</h4></a>
+							</div>
+							<div class="col-sm-3 blog-post-list-meta pr-2">
+								<small ><i class="fa fa-clock-o" aria-hidden="true"></i>
+ {{date published_at}}</small>
+							</div>
+						</div>
+						{{{description}}}
+					</li>
+				{{/each}}
+				</ul>
+			</div>
+			<!-- /.blog-main -->
+		</div>
+		<!-- /.row -->
+
+	</div>
+	<!-- /.container -->
+{{> page-footer}} {{> html-footer}}
+
