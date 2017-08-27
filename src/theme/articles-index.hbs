@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-sm-12 blog-main">
 				<ul class=" blog-list list-unstyled">
-				{{#each posts}}
+				{{#each index}}
 					<li>
 						<div class="row">
 							<div class="col-sm-9">
@@ -19,6 +19,10 @@
 					</li>
 				{{/each}}
 				</ul>
+				<nav class="blog-pagination">
+                    <a class="btn btn-outline-dark{{#unless paginate.previous}} disabled{{/unless}}" href="{{paginate.previous_page_url}}">Previous</a>
+                    <a class="btn btn-outline-dark{{#unless paginate.next}} disabled{{/unless}}" href="{{paginate.next_page_url}}">Next</a>
+                </nav>
 			</div>
 			<!-- /.blog-main -->
 		</div>

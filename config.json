@@ -26,12 +26,37 @@
     
     "home_dir": "articles",
     "default_layout": "page",
-    "process_obj_tree": true,
-    "paginate" : {
-        "limit": -1,
-        "articles": {
-            "sortBy":"date",
-            "create_index": false
+    "default_index_layout": "articles-index",    
+    "debug": true,
+    "pagination" : {
+        "limit": 5,
+        "dir" : {
+            "articles": {
+                "sortBy":"date",
+                "paginate": true
+            },
+            "posts": {
+                "sortBy":"date",
+                "paginate": true
+            },
+            "_default_": {
+                "sortBy":"date",
+                "paginate": true
+            }
+        },
+        "taxonomy": {
+            "tags": {
+                "sortBy":"date",
+                "paginate": true
+            },
+            "category": {
+                "sortBy":"date",
+                "paginate": true
+            },
+            "_default_": {
+                "sortBy":"date",
+                "paginate": true
+            }
         }
     },
     "navigations_config" : {

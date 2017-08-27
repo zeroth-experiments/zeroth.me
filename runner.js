@@ -28,7 +28,7 @@ nasher.theme(function theme(config, engine) {
     let theme_main_files = glob.sync(path.join(theme_dir, '!(partials|scripts|css)'));
     let theme_partials_files = glob.sync(path.join(theme_dir, 'partials', '*'));
     let theme_helpers_files = glob.sync(path.join(theme_dir, 'scripts', '*.js'));
-    
+
     let theme_partials = theme_partials_files.reduce(function (acc, val) {
         let content = fs.readFileSync(val);
         let partial_name = path.basename(val, '.hbs');

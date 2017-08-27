@@ -29,21 +29,21 @@ body {
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Source Sans Pro', sans-serif; */
     /*  font-family: 'Source Serif Pro', serif;
-    
+
     color: #555;
-    background-color: #f5f3df;*/ 
+    background-color: #f5f3df;*/
     /* background-color: #fafafa; */
     /* line-height: 1.58; */
-    
+
     /*}*/
-    
+
     h1, .h1,
     h2, .h2,
     h3, .h3,
     h4, .h4,
     h5, .h5,
     h6, .h6 {
-        font-family: 'Roboto', sans-serif; 
+        font-family: 'Roboto', sans-serif;
         /* font-family: 'Source Serif Pro', serif; */
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 700;
@@ -51,26 +51,26 @@ body {
         line-height: 1.1;
         margin-bottom: 1rem;
     }
-    
+
     pre {
-        
-        white-space: pre; 
-        white-space: pre-wrap; 
-        white-space: -moz-pre-wrap; 
-        white-space: -o-pre-wrap; 
-        
+
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+
         clear: both;
-        padding: 2px; 
+        padding: 2px;
         /* margin: auto 5rem 1rem 2rem; */
         background: #f4f4f4;
         border: solid 1px #e1e1e1
-    } 
-    
-    
+    }
+
+
     /*
     * Override Bootstrap's default container.
     */
-    
+
     .container {
         max-width: 60rem;
     }
@@ -79,23 +79,23 @@ body {
             max-width: 50rem;
         }
     }
-    
+
     /*
     * Masthead for nav
     */
-    
+
     .blog-masthead {
         /* margin-bottom: 3rem; */
         /* background-color: #428bca; */
         -webkit-box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
         box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
-        
+
     }
     /*
     * Blog name and description
     */
-    
-    
+
+
     .blog-title {
         margin-bottom: 0;
         font-size: 2rem;
@@ -104,22 +104,22 @@ body {
         /* color: #f5f3df; */
         color: #eb6620;
         font-family: 'Special Elite', cursive;
-        
+
     }
     .blog-title a {
         text-decoration: none;
-        color: inherit;        
-        
+        color: inherit;
+
     }
     .blog-title a:hover {
         text-decoration: none;
-        color: inherit;        
+        color: inherit;
     }
     .blog-description {
         font-size: 1.1rem;
         color: #999;
     }
-    
+
     @media (min-width: 40em) {
         .blog-title {
             font-size: 3.5rem;
@@ -135,7 +135,7 @@ body {
         box-shadow: inset 0 -.1rem .25rem rgba(0,0,0,.1);
         text-align: center;
         background-image: url("/assets/img/computer-1873831_1920_WithBlur.png");
-        background-position: center; 
+        background-position: center;
         background-repeat: no-repeat;
     }
     /* Nav links */
@@ -150,15 +150,15 @@ body {
         color: #cdddeb;
         display: inline-block;
         font-size: 0.8rem;
-        
+
     }
-    
+
     .nav-link:hover,
     .nav-link:focus {
         color: #fff;
         background-color: transparent;
     }
-    
+
     /* Active state gets a caret at the bottom */
     .nav-link.active {
         color: #fff;
@@ -176,15 +176,15 @@ body {
         border-bottom: .3rem solid;
         border-left: .3rem solid transparent;
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     /*
     * Main column and sidebar layout
     */
-    
+
     /* Sidebar modules for boxing content */
     .sidebar-module {
         padding: 1rem;
@@ -200,16 +200,17 @@ body {
     .sidebar-module-inset ol:last-child {
         margin-bottom: 0;
     }
-    
-    
+
+
     /* Pagination */
     .blog-pagination {
         margin-bottom: 4rem;
+        padding-left: 1rem;
     }
     .blog-pagination > .btn {
         border-radius: 2rem;
     }
-    
+
     .self-image {
         width: 10rem;
         margin-right: 1rem;
@@ -221,7 +222,7 @@ body {
     /*.about {
         padding-top: 4rem;
     }*/
-    
+
     /*
     * Blog posts
     */
@@ -248,10 +249,10 @@ body {
             font-size: 2rem;
         }
         .blog-post-title {
-            margin-bottom: 0.25rem; 
+            margin-bottom: 0.25rem;
             /* font-size: 2.5rem;  */
         }
-        
+
             .blog-post-meta {
                 padding-bottom: 0.50rem;
                 /* float: right; */
@@ -261,7 +262,7 @@ body {
                 color: #999;
                 font-size: 0.75rem;
             }
-            
+
             .blog-post-list-meta {
                 padding-bottom: 0.50rem;
                 /* float: right; */
@@ -271,7 +272,7 @@ body {
                 color: #999;
                 font-size: 0.75rem;
                 text-align: right;
-                
+
             }
             .blog-list {
                 padding-left: 1rem;
@@ -280,16 +281,16 @@ body {
                 padding-bottom: 2rem;
             }
             .blog-list li {
-                
+
                 padding: 1rem;
                 /* margin-bottom: 1rem; */
-                /*     
+                /*
                 background: #fff;
                 border: .05rem solid #eee;
                 box-shadow: 0 1px 4px rgba(0,0,0,.04);
                 border: 1px solid rgba(0,0,0,.09);
                 border-radius: 3px; */
-                
+
             }
             .blog-list li:nth-child(even) {
                 /* background: #f1efdf; */
@@ -300,13 +301,13 @@ body {
                 text-decoration: none;
             }
             /* .blog-list li:first-child {
-                
+
                 padding-top: 0;
-                
+
             } */
-            
+
             .blog-list li:last-child {
-                border-bottom: 0;  
+                border-bottom: 0;
             }
             .blog-list li p {
                 font-size: 18px;
@@ -316,12 +317,12 @@ body {
                 content: "...";
             }
             p.blog-post-meta::after {
-                content: "";  
+                content: "";
             }
             /*
             * Footer
             */
-            
+
             .blog-footer {
                 padding: 2.5rem 0;
                 color: #999;
@@ -343,4 +344,3 @@ body {
             .blog-footer p:last-child {
                 margin-bottom: 0;
             }
-            
