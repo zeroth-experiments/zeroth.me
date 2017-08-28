@@ -7,15 +7,25 @@
 				{{#each index}}
 					<li>
 						<div class="row">
-							<div class="col-sm-9">
+							<div class="col-sm-10">
 								<a href="/{{url}}"><h4 class="blog-post-list-title">{{title}}</h4></a>
+								<span class="blog-post-list-tags">
+								<small><i class="fa fa-tags" aria-hidden="true"></i></small>
+								{{#each tags}}
+									<small><a class="badge badge-{{random 7}}" href="/tags/{{this}}">{{this}}</a></small>
+								{{/each}}
+								</span>
 							</div>
-							<div class="col-sm-3 blog-post-list-meta pr-2">
+							<div class="col-sm-2 blog-post-list-meta pr-2">
 								<small ><i class="fa fa-clock-o" aria-hidden="true"></i>
  {{date published_at}}</small>
 							</div>
 						</div>
-						{{{description}}}
+						<div class="row">
+							<div class="col-sm-12 blog-post-list-description">
+								{{{description}}}
+							</div>
+						</div>
 					</li>
 				{{/each}}
 				</ul>
